@@ -4,16 +4,16 @@ This is a variation of the PageRank algorithm (of Google fame). I created this
 as an assignment for my Information Retrieval course (Fall 2014).
 
 It is broken into scripts that perform specific tasks. For
-example, a Bash script (organize_files.sh) is used to remove dangling links from
-the original links file (links.srt). Another Bash script (top50.sh) is used to
+example, a Bash script (*organize_files.sh*) is used to remove dangling links from
+the original links file (*links.srt*). Another Bash script (*top50.sh*) is used to
 calculate the top 50 results for both inlinks and pageranks. There are also two
-Java programs (LoopOne.java & LoopTwo.java) that are used to improve the
+Java programs (*LoopOne.java* & *LoopTwo.java*) that are used to improve the
 efficiency of the original submission (which was done entirely in Bash, but was
-VERY slow). Finally, I included a master Bash file (hw04_ersing.sh) that runs
+VERY slow). Finally, I included a master Bash file (*hw04_ersing.sh*) that runs
 each program in the appropriate order. This was done so that the entire suite of
 programs can be completed simply by running a single script. Once the scripts
 (Java & Bash) are in place, ~~add the following files to the same directory (they
-are located in the "input_files" directory)~~ **These files are too large for github.
+are located in the *'input_files'* directory).~~ **These files are too large for github.
 If you are viewing this, and you genuinely want/need access to the original files,
 then contact me. However, the format is very straightforward (with samples shown
 below)**:
