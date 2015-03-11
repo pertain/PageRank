@@ -33,66 +33,66 @@ sh hw04_ersing.sh
 **Formatting Samples**
 
 1. **links.srt** (tab-separated, page name on left, outlinks on right)
-
-```
-!Amigos!_2046	%C2%A1Amigos%21_09f6
-!Hero_d070	%21Hero_%28album%29_053d
-!Hero_d070	%21Hero_d070
-!Hero_d070	Angel
-!Hero_d070	Audio_Adrenaline_a9fb
-!Hero_d070	Bethlehem%2C_Pennsylvania_d331
-!Hero_d070	Bible
-!Hero_d070	Bob_Farrell_7a92
-!Hero_d070	Brooklyn
-!Hero_d070	Caiaphas
-!Hero_d070	Christianity
-!Hero_d070	Comic_book
-!Hero_d070	DVD_1991
-!Hero_d070	Dystopia
-!Hero_d070	Earth
-!Hero_d070	Eddie_DeGarmo_a41d
-!Hero_d070	GRITS_%28band%29_d942
-!Hero_d070	Gangs
-!Hero_d070	Gospel
-!Hero_d070	Governor
-!Hero_d070	Janitor
-!Hero_d070	Jesus
-!Hero_d070	Jesus_Freak_Hideout_5d9d
-!Hero_d070	Jewish
-!Hero_d070	John_Cooper_%28musician%29_cb59
-!Hero_d070	Judaism
-!Hero_d070	Judas_Iscariot_cdd5
-!Hero_d070	Mark_Stuart_%28musician%29_3848
-!Hero_d070	Mary_Magdalene_8dd9
-!Hero_d070	Michael_Tait_431d
-!Hero_d070	New_York_City_1428
-!Hero_d070	Novel
-!Hero_d070	Paul_Wright_%28rapper%29_2d12
-!Hero_d070	Pete_Stewart_c977
-!Hero_d070	Police
-!Hero_d070	Police_Chief_cd1d
-!Hero_d070	Preacher
-!Hero_d070	Rabbi
-!Hero_d070	Rebecca_St._James_4a02
-!Hero_d070	Religion
-!Hero_d070	Resurrection_of_Jesus_9d9f
-!Hero_d070	Rock_opera
-!Hero_d070	Sanctus_Real_e861
-!Hero_d070	Skillet_%28band%29
-!Hero_d070	St._Peter_f8c9
-!Hero_d070	Synagogue
-!Hero_d070	T-Bone_%28rapper%29_c356
-!Hero_d070	index
-!Mucha_Lucha!_1b9f	%C2%A1Mucha_Lucha%21_0303
-$pread	%24pread
-$pread	Sex_worker
-$pread	Sex_workers_rights
-$pread	index
-(+)-delta-cadinene_synthase	%28%2B%29-delta-cadinene
-(+)-delta-cadinene_synthase	%28%2B%29-delta-cadinene_synthase
-(+)-delta-cadinene_synthase	2-trans%2C6-trans-farnesyl_diphosphate
-```
-
+	 
+	```
+	!Amigos!_2046	%C2%A1Amigos%21_09f6
+	!Hero_d070	%21Hero_%28album%29_053d
+	!Hero_d070	%21Hero_d070
+	!Hero_d070	Angel
+	!Hero_d070	Audio_Adrenaline_a9fb
+	!Hero_d070	Bethlehem%2C_Pennsylvania_d331
+	!Hero_d070	Bible
+	!Hero_d070	Bob_Farrell_7a92
+	!Hero_d070	Brooklyn
+	!Hero_d070	Caiaphas
+	!Hero_d070	Christianity
+	!Hero_d070	Comic_book
+	!Hero_d070	DVD_1991
+	!Hero_d070	Dystopia
+	!Hero_d070	Earth
+	!Hero_d070	Eddie_DeGarmo_a41d
+	!Hero_d070	GRITS_%28band%29_d942
+	!Hero_d070	Gangs
+	!Hero_d070	Gospel
+	!Hero_d070	Governor
+	!Hero_d070	Janitor
+	!Hero_d070	Jesus
+	!Hero_d070	Jesus_Freak_Hideout_5d9d
+	!Hero_d070	Jewish
+	!Hero_d070	John_Cooper_%28musician%29_cb59
+	!Hero_d070	Judaism
+	!Hero_d070	Judas_Iscariot_cdd5
+	!Hero_d070	Mark_Stuart_%28musician%29_3848
+	!Hero_d070	Mary_Magdalene_8dd9
+	!Hero_d070	Michael_Tait_431d
+	!Hero_d070	New_York_City_1428
+	!Hero_d070	Novel
+	!Hero_d070	Paul_Wright_%28rapper%29_2d12
+	!Hero_d070	Pete_Stewart_c977
+	!Hero_d070	Police
+	!Hero_d070	Police_Chief_cd1d
+	!Hero_d070	Preacher
+	!Hero_d070	Rabbi
+	!Hero_d070	Rebecca_St._James_4a02
+	!Hero_d070	Religion
+	!Hero_d070	Resurrection_of_Jesus_9d9f
+	!Hero_d070	Rock_opera
+	!Hero_d070	Sanctus_Real_e861
+	!Hero_d070	Skillet_%28band%29
+	!Hero_d070	St._Peter_f8c9
+	!Hero_d070	Synagogue
+	!Hero_d070	T-Bone_%28rapper%29_c356
+	!Hero_d070	index
+	!Mucha_Lucha!_1b9f	%C2%A1Mucha_Lucha%21_0303
+	$pread	%24pread
+	$pread	Sex_worker
+	$pread	Sex_workers_rights
+	$pread	index
+	(+)-delta-cadinene_synthase	%28%2B%29-delta-cadinene
+	(+)-delta-cadinene_synthase	%28%2B%29-delta-cadinene_synthase
+	(+)-delta-cadinene_synthase	2-trans%2C6-trans-farnesyl_diphosphate
+	```
+	 
 2. **wiki-large-filenames-short.srt** (one column, only contains page names):
 
 ```
