@@ -19,10 +19,10 @@ echo
 echo "Removing dangling links..."
 
 # isolate outlinks (column 2) from $FULL_LINKS and sort
-cut -f2 $FULL_LINKS | sort -u -o outlinks.txt
+cut -f2 "$FULL_LINKS" | sort -u -o outlinks.txt
 
 # sort corpus so it can be compared with outlinks.txt
-sort $CORPUS -o corpus.txt
+sort "$CORPUS" -o corpus.txt
 
 # determine common links/pages from the two files (the two columns of $FULL_LINKS)
 comm -1 -2 outlinks.txt corpus.txt > common.txt
@@ -31,7 +31,7 @@ comm -1 -2 outlinks.txt corpus.txt > common.txt
 awk 'NR==FNR{targets[$1]; next} $2 in targets' common.txt $FULL_LINKS | LC_COLLATE=C sort -o reducedLinks.txt 
 
 # sort corpus.txt to match sorting of reducedLinks.txt
-LC_COLLATE=C sort $CORPUS -o corpus.txt
+LC_COLLATE=C sort "$CORPUS" -o corpus.txt
 
 # clean up tmp files
 rm outlinks.txt common.txt

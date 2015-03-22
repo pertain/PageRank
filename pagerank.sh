@@ -18,7 +18,7 @@ LINKS=reducedLinks.txt
 
 
 isConverged=false
-sz_P=$( wc -l < $CORPUS )
+sz_P="$( wc -l < "$CORPUS" )"
 
 ############## The following commands are used to generate I.txt ##############
 
@@ -26,11 +26,11 @@ echo
 echo "Generating I.txt..."
 
 # temporarily sort $LINKS & $CORPUS so join command can be used to create I.txt
-sort $CORPUS -o cSorted.txt
-sort $LINKS -o lSorted.txt
+sort "$CORPUS" -o cSorted.txt
+sort "$LINKS" -o lSorted.txt
 
 # initial pagerank value of ( 1/|P| )
-initPR=$( bc <<< "scale=20; 1 / $sz_P" )
+initPR="$( bc <<< "scale=20; 1 / $sz_P" )"
 
 # add 'number of outlinks' column for each line in $LINKS (missing terminals)
 cut -f1 lSorted.txt | sort | uniq -c | awk '{t=$1; $1=$2; $2=t;}1' > ol.txt
@@ -60,24 +60,24 @@ echo
 
 # loops until sum of differences between old and new pageranks is < 0.01 (converged)
 pass=1
-while [ $isConverged = false ]
+while [ "$isConverged" = false ]
 do
 	echo "[ Iteration: "$pass" ]"
 
 	# iterate through all pages in I.txt & $LINKS in parallel
 	# this part is performed by an external java program 
-	firstTwoTerms="$( java LoopOne $sz_P $LINKS )"
+	firstTwoTerms="$( java LoopOne "$sz_P" "$LINKS" )"
 	
 	# sort R.txt by destination
 	LC_COLLATE=C sort R.txt -o R.txt
 
 	# iterate through all pages in I.txt & R.txt in parallel
 	# this part is performed by an external java program 
-	isConverged="$( java LoopTwo $sz_P $firstTwoTerms )"
-	echo -e "Converged?" "$isConverged"
+	isConverged="$( java LoopTwo "$sz_P" "$firstTwoTerms" )"
+	echo -e 'Converged?' "$isConverged"
 	echo
 
 	# updade I.txt
 	mv temp_I.txt I.txt
-	pass=$[$pass+1]
+	pass="$[$pass+1]"
 done

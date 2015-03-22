@@ -29,7 +29,7 @@ sed 's/ /\t/g' -i top50_inlinks.txt
 echo "Calculating top 50 pages by pagerank..."
 
 # sort I.txt by pagerank column and write top 50 values to file
-sort -rnk3 I.txt | awk '{print $3 "\t" $1}' | head -50 > top50_pageranks.txt
+sort -rnk3 I.txt | awk '{print "$3" "\t" "$1"}' | head -50 > top50_pageranks.txt
 
 echo "Done!"
 echo
