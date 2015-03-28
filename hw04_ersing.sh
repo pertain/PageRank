@@ -6,8 +6,8 @@
 # Once you extract the submission (hw04_ersing_REVISED.tgz)
 # ensure that the following files are also placed in
 # the extracted 'scripts' directory:
-#	1) links.srt
-#	2) wiki-large-filenames-short.srt
+#   1) links.srt
+#   2) wiki-large-filenames-short.srt
 #
 # When all files are in place, simply run this script.
 

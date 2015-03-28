@@ -62,22 +62,22 @@ echo
 pass=1
 while [ "$isConverged" = false ]
 do
-	echo "[ Iteration: "$pass" ]"
+    echo "[ Iteration: "$pass" ]"
 
-	# iterate through all pages in I.txt & $LINKS in parallel
-	# this part is performed by an external java program 
-	firstTwoTerms="$( java LoopOne "$sz_P" "$LINKS" )"
-	
-	# sort R.txt by destination
-	LC_COLLATE=C sort R.txt -o R.txt
+    # iterate through all pages in I.txt & $LINKS in parallel
+    # this part is performed by an external java program 
+    firstTwoTerms="$( java LoopOne "$sz_P" "$LINKS" )"
+    
+    # sort R.txt by destination
+    LC_COLLATE=C sort R.txt -o R.txt
 
-	# iterate through all pages in I.txt & R.txt in parallel
-	# this part is performed by an external java program 
-	isConverged="$( java LoopTwo "$sz_P" "$firstTwoTerms" )"
-	echo -e 'Converged?' "$isConverged"
-	echo
+    # iterate through all pages in I.txt & R.txt in parallel
+    # this part is performed by an external java program 
+    isConverged="$( java LoopTwo "$sz_P" "$firstTwoTerms" )"
+    echo -e 'Converged?' "$isConverged"
+    echo
 
-	# updade I.txt
-	mv temp_I.txt I.txt
-	pass="$[$pass+1]"
+    # updade I.txt
+    mv temp_I.txt I.txt
+    pass="$[$pass+1]"
 done

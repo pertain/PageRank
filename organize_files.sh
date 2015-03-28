@@ -2,10 +2,10 @@
 #
 # Written by William Ersing
 #
-#	Read in $FULL_LINKS -- which contains the link structure
-#	for the wiki-large corpus -- and remove any lines that
-#	result in dangling outlinks (i.e. values in column 2 that
-#	that are not present in column 1)
+#   Read in $FULL_LINKS -- which contains the link structure
+#   for the wiki-large corpus -- and remove any lines that
+#   result in dangling outlinks (i.e. values in column 2 that
+#   that are not present in column 1)
 
 
 # ===============================================================

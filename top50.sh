@@ -2,8 +2,8 @@
 #
 # Written by William Ersing
 #
-#	Calculates the top 50 pages by inlink count
-#	Calculates the top 50 pages by pagerank
+#   Calculates the top 50 pages by inlink count
+#   Calculates the top 50 pages by pagerank
 
 
 # ===============================================================
