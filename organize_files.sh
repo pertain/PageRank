@@ -28,7 +28,7 @@ sort "$CORPUS" -o corpus.txt
 comm -1 -2 outlinks.txt corpus.txt > common.txt
 
 # delete lines in $FULL_LINKS not found in common.txt (i.e. dangling links)
-awk 'NR==FNR{targets[$1]; next} $2 in targets' common.txt $FULL_LINKS | LC_COLLATE=C sort -o reducedLinks.txt 
+awk 'NR==FNR{targets[$1]; next} $2 in targets' common.txt "$FULL_LINKS" | LC_COLLATE=C sort -o reducedLinks.txt 
 
 # sort corpus.txt to match sorting of reducedLinks.txt
 LC_COLLATE=C sort "$CORPUS" -o corpus.txt
