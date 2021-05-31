@@ -1,36 +1,17 @@
-#PageRank
+# PageRank
 
-This is a variation of the PageRank algorithm (of Google fame). I created this
-as an assignment for my Information Retrieval course (Fall 2014).
+Implementation of the PageRank algorithm (of Google fame) for Information Retrieval course.
 
-It is broken into scripts that perform specific tasks. For
-example, a Bash script (organize_files.sh) is used to remove dangling links from
-the original links file (links.srt). Another Bash script (top50.sh) is used to
-calculate the top 50 results for both inlinks and pageranks. There are also two
-Java programs (LoopOne.java & LoopTwo.java) that are used to improve the
-efficiency of the original submission (which was done entirely in Bash, but was
-VERY slow). Finally, I included a master Bash file (hw04_ersing.sh) that runs
-each program in the appropriate order. This was done so that the entire suite of
-programs can be completed simply by running a single script. Once the scripts
-(Java & Bash) are in place, ~~add the following files to the same directory (they
-are located in the 'input_files' directory).~~ **These files are too large for github.
-If you are viewing this, and you genuinely want/need access to the original files,
-then contact me. However, the format is very straightforward (with samples shown
-below)**:
+It is broken into a collection of Bash scripts and Java programs which perform
+specific tasks.
+First, a Bash script, *organize_files.sh*, removes dangling links from
+the original links file, *links.srt*. A second Bash script *top50.sh*, calculates
+the top 50 results for both inlinks and pageranks. Two Java programs,
+*LoopOne.java* and *LoopTwo.java*, were used to improve inefficiencies in the
+original implementation, which was written entirely in Bash.
+A Bash script, *pagerank.sh*, is used to drive/orchestrate this collection of code in the correct order.
 
-1. links.srt
-2. wiki-large-filenames-short.srt
-
-Either name your input files using the names shown above, or modify the program
-files to reference your own input file (with formatting to match that of below).
-
-Once the files are in place, run the program by typing: 
-
-```
-sh hw04_ersing.sh
-```
-
-**Formatting Samples**
+**The data files are too large for github; data format samples are included below.**
 
 1. **links.srt** (tab-separated, page name on left, outlinks on right)
      
@@ -133,7 +114,3 @@ sh hw04_ersing.sh
     (See_Inside)_c4a7
     (Sittin'_On)_The_Dock_of_the_Bay_7de6
     ```
-     
-**Please keep in mind that this was an assignment and the input files referenced
-above were provided by the instructor. Due to the size restrictions of GitHub, they
-are not included here.**
