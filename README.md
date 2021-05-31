@@ -2,14 +2,16 @@
 
 Implementation of the PageRank algorithm (of Google fame) for Information Retrieval course.
 
-It is broken into a collection of Bash scripts and Java programs which perform
-specific tasks.
+Functionality is spread across a collection of Bash scripts and Java programs
+which perform specific tasks.
+
 First, a Bash script, *organize_files.sh*, removes dangling links from
 the original links file, *links.srt*. A second Bash script *top50.sh*, calculates
 the top 50 results for both inlinks and pageranks. Two Java programs,
-*LoopOne.java* and *LoopTwo.java*, were used to improve inefficiencies in the
+*LoopOne.java* and *LoopTwo.java*, were used to improve file read inefficiencies in the
 original implementation, which was written entirely in Bash.
-A Bash script, *pagerank.sh*, is used to drive/orchestrate this collection of code in the correct order.
+
+Finally, a Bash script, *pagerank.sh*, is used to drive/orchestrate this collection of code in the correct order.
 
 **The data files are too large for github; data format samples are included below.**
 
