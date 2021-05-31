@@ -1,6 +1,6 @@
 /* LoopTwo.java
  *
- * This script performs the second loop in my pagerank script (pagerank.sh).
+ * This script performs the second loop in my pagerank script (rank.sh).
  * The bash script was far too slow without using a buffered file reader,
  * so this script was created (along with LoopOne.java) to make the process
  * more efficient.
